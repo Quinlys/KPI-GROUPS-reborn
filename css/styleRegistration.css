@@ -1,0 +1,832 @@
+@charset "UTF-8";
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {
+    color: rgba(0, 0, 0, .25);
+    border-color: rgba(0, 0, 0, .25)
+}
+
+body, html {
+    height: 100%
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.75;
+    font-family: raleway, sans-serif;
+    overflow-x: hidden;
+    opacity: 1
+}
+
+body.ishome .site-header {
+    height: 100vh;
+    background-color: #E8E8E8;
+}
+
+body.ishome .site-header .top-line {
+    padding-top: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+
+header, section {
+    position: relative;
+    background-position: center;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #151515;
+    z-index: 100
+}
+
+.pulse {
+    position: relative;
+    left: 50%;
+    top: 50vh;
+    margin-left: -40px;
+    margin-top: -40px
+}
+
+.pulse:after, .pulse:before {
+    content: '';
+    border: 5px solid #323232;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 500px;
+    border-radius: 500px;
+    position: absolute
+}
+
+.pulse:before {
+    -webkit-animation: pulse-outer .8s ease-in infinite;
+    animation: pulse-outer .8s ease-in infinite
+}
+
+.pulse:after {
+    -webkit-animation: pulse-inner .8s linear infinite;
+    animation: pulse-inner .8s linear infinite
+}
+
+@-webkit-keyframes pulse-outer {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: .5
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes pulse-outer {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: .5
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes pulse-inner {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes pulse-inner {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-size: cover;
+}
+
+.header {
+    background-color: #5C5C5C;
+}
+
+.whiteLogo {
+    margin-left: 20%;
+    height: 70px;
+    width: auto;
+}
+
+.registration {
+    height: 90%;
+    width: 100%;
+}
+
+.regPlace {
+    margin-bottom: 0px;
+    padding-left: 40px;
+    margin-top: 15vh;
+    background-color: #FFFFFF;
+    color: #606060;
+}
+
+.alertGroup {
+    margin-top: 10px;
+    font-size: 10px;
+    width: 200px;
+    opacity: 0;
+}
+
+#alertPassword {
+    margin-top: 0px;
+    margin-left: 20px;
+    font-size: 10px;
+    color: #D50000;
+}
+
+.email {
+    margin-top: 25px;
+}
+
+#barEmail, #email {
+    width: 250px;
+}
+
+.passwords {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+#barRepeatPassword, #repeatPassword {
+    width: 160px;
+    float: left;
+}
+
+
+.blackLogo {
+    margin-top: 60px;
+    height: 200px;
+    width: auto;
+}
+
+.textCreate {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+
+.firstInputs {
+    margin-top: 10px;
+}
+
+.eye {
+    margin-top: 20px;
+    height: 25px;
+    width: auto;
+}
+
+#secondBack, #thirdBack {
+    cursor: pointer;
+    margin-left: 15px;
+    color: #888888;
+}
+
+#thirdBack {
+    width: 60px;
+    margin-left: 15px;
+}
+
+#next {
+    cursor: pointer;
+    margin-top: -7px;
+    margin-left: 165px;
+    width: 70px;
+    border: 0;
+    background-color: #888888;
+    color: #fff;
+}
+
+#send {
+    cursor: pointer;
+    margin-left: 25px;
+    margin-top: -7px;
+    width: 100px;
+    border: 0;
+    background-color: #888888;
+    color: #fff;
+}
+
+#check {
+    cursor: pointer;
+    margin-left: 230px;
+    margin-top: -7px;
+    width: 120px;
+    border: 0;
+    background-color: #888888;
+    color: #fff;
+}
+
+
+#notNow {
+    margin-left: 150px;
+    color: #888888;
+}
+
+#back {
+    float: left;
+    margin-left: 15px;
+    color: #888888;
+}
+
+.lastRow {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.srb {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+#accessEmail {
+    margin-left: -30px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+#accessEmailText {
+    margin-left: -30px;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 350px;
+}
+
+#jsEmail {
+    margin-left: -30px;
+    margin-top: 35px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.accessCode {
+    opacity: 0;
+    margin-left: -30px;
+    display: none;
+    margin-bottom: 80px;
+}
+
+.secondLevel {
+    display: none;
+    opacity: 0;
+}
+
+.thirdLevel {
+    display: none;
+    opacity: 0;
+}
+
+.groupRegEmail {
+    margin-top: 85px;
+}
+
+.teacherRegEmail {
+    margin-top: 42px;
+}
+
+
+
+/* ------------------------ Адаптация под телефоны ---------------------- */
+
+/* --------------- Адаптация под iPhone 4 --------------- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .whiteLogo {
+        margin-left: 0;
+    }
+
+    .regPlace {
+        margin-top: 0;
+    }
+
+    .textCreate {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .group {
+        margin: 5px 0 5px 0;
+    }
+
+    .blackLogo {
+        height: 0px;
+    }
+
+    #name, #group {
+        width: 220px;
+    }
+
+    #barName, #barGroup, #barPassword {
+        width: 220px;
+    }
+
+    #barRepeatPassword, #repeatPassword {
+        width: 190px;
+        float: left;
+    }
+
+    .alertGroup {
+        margin-top: 7px;
+        margin-left: 5px;
+    }
+    .email {
+        margin-top: 0px;
+    }
+
+    #email, #password, #code {
+        width: 220px;
+    }
+
+    #barEmail, #barCode {
+        width: 220px;
+    }
+
+    .passwords {
+        margin-top: 20px;
+    }
+
+    .lastRow {
+        margin-top: -30px;
+    }
+
+    #back {
+        font-size: 12px;
+    }
+
+    #next {
+        margin-top: -8px;
+        margin-left: 20px;
+    }
+
+    .site-header {
+        background-color: #FFFFFF;
+    }
+
+    #accessEmailText {
+        width: 250px;
+    }
+
+
+    #notNow {
+        margin-left: 25px;
+    }
+
+
+    #check {
+        margin-left: 205px;
+    }
+
+    #accessCode {
+        margin-top: -10px;
+    }
+
+    #check {
+        margin-left: 85px;
+    }
+
+}
+
+/* --------------- Адаптация под iPhone 5 --------------- */
+
+@media (min-width: 320px) and (max-width: 568px) {
+
+}
+
+/* ----------- Адаптация под iPhone 7/8 Plus ------------ */
+
+@media (min-width: 414px) and (max-width: 736px) {
+    .email {
+        margin-top: 0px;
+    }
+
+    #notNow {
+        margin-left: 80px;
+    }
+}
+
+/* ------------- Адаптация под iPhone 7/8 --------------- */
+
+@media (min-width: 375px) and (max-width: 667px) {
+
+    .lastRow {
+        margin-top: 20px;
+        margin-bottom: 250px;
+        background-color: #FFFFFF;
+    }
+
+    #next {
+        margin-left: 50px;
+    }
+
+    .email {
+        margin-top: 0px;
+    }
+}
+
+/* ------------- Адаптация под iPad --------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blackLogo {
+        height: 0px;
+    }
+
+    input {
+        width: 100px;
+    }
+
+    .bar {
+        width: 100px;
+    }
+
+    .email {
+        margin-top: 15px;
+    }
+
+    #email, #barEmail {
+        width: 200px;
+    }
+
+    .lastRow {
+        margin-top: 0px;
+    }
+
+    #next {
+        margin-left: 170px;
+    }
+
+    .eye {
+        height: 22px;
+    }
+}
+
+/* ------------ Адаптация под iPad Pro ----------- */
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+    .blackLogo {
+        margin-top: 100px;
+        height: 130px;
+        margin-bottom: 20px;
+    }
+
+    #name, #group, #password, #barName, #barGroup, #barPassword {
+        width: 120px;
+    }
+
+    #code {
+        width: 180px;
+    }
+
+
+    .alertGroup, #alertPassword {
+        margin-top: 8px;
+        width: 150px;
+        font-size: 9px;
+    }
+
+    .email {
+        margin-top: 10px;
+    }
+
+    #repeatPassword, #barRepeatPassword {
+        width: 120px;
+        float: left;
+    }
+
+    #barCode {
+        width: 180px;
+    }
+
+    #labelRepeatPassword {
+        font-size: 10px;
+    }
+
+    .lastRow {
+        margin-top: 50px;
+    }
+
+    #next {
+        margin-left: 40px;
+    }
+
+    #accessEmailText {
+        width: 250px;
+        font-size: 14px;
+    }
+
+    #accessEmail {
+        width: 200px;
+        font-size: 17px;
+    }
+
+
+}
+
+/* --------------- Адаптация под Galaxy S5 -------------- */
+
+@media (min-width: 360px) and (max-width: 640px) {
+
+    .textCreate {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .group, .passwords {
+        margin-top: 20px;
+    }
+
+    .lastRow {
+        margin-top: 20px;
+    }
+
+    #next {
+        margin-left: 50px;
+    }
+
+    #notNow {
+        margin-left: 40px;
+    }
+
+
+
+}
+
+/* --------------- Адаптация под iPhone X --------------- */
+
+@media (min-width: 375px) and (max-width: 812px) {
+}
+
+/* ------------------------ Конец адаптации под телефоны ---------------------- */
+
+/*Инпуты*/
+
+input::-webkit-input-placeholder {
+    color: #00ffff;
+}
+
+input::-moz-placeholder {
+    color: #00ffff;
+}
+
+/*Анимация инпутов*/
+
+.group {
+    opacity: 1;
+    position: relative;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 0px 0px 5px;
+    display: block;
+    width: 180px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color: #606060;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    color: #606060;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 19px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+    top: -5px;
+    left: 15px;
+    font-size: 10px;
+    color: #8e9cd1;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 180px;
+}
+
+.wrong {
+    border-bottom: 2px solid red;
+}
+input:focus ~ .wrong-label, input:valid ~ .wrong-label {
+    top: -5px;
+    left: 15px;
+    font-size: 10px;
+    color: #D50000;
+}
+.wrong-group{
+    color:#D50000 !important;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #3264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.wbar:before, .wbar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #D50000;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.wbar:before {
+    left: 50%;
+}
+
+.wbar:after {
+    right: 50%;
+}
+
+input:focus ~ .wbar:before, input:focus ~ .wbar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 1;
+}
+
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="utf-8">
+
+    <title>Реєстрація студента</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/blackLogo.png" type="image/png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">-->
+    <!--<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">-->
+    <!--<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">-->
+    <!--<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <style>body {
+        opacity: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    html {
+        background-color: #151515;
+    }</style>
+
+</head>
+
+<body class="ishome">
+<div class="preloader">
+    <div class="pulse"></div>
+</div>
+<header class="site-header" id="site-header">
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                <img src="img/WhiteLogo.png" class="whiteLogo">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid registration" style="overflow: auto; background-color: #E8E8E8;">
+        <div class="row">
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-0"></div>
+            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12 regPlace">
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 colorLine"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textCreate">
+                            Створення облікового запису студента
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                            <div class="firstLevel" style="display: block">
+                                <div class="row firstInputs">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 group">
+
+                                        <input id="name" type="text" data-toggle="tooltip" data-placement="top" class="valid" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar" id="barName"></span>
+                                        <label class="label">Ім'я та фамілія</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 group">
+                                        <input id="group" type="text"  class="valid"  data-toggle="tooltip" data-placement="top" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar" id="barGroup"></span>
+                                        <label class="label">Група</label>
+                                        <p class="alertGroup">Ваша група повинна бути зареєстрована в системі.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 group email">
+                                        <input id="email" type="text" class="valid" data-toggle="tooltip" data-placement="top" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar" id="barEmail"></span>
+                                        <label class="label" id="labelEmail">Введіть електронну адресу</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 group passwords">
+                                        <input id="password" type="password" class="valid" data-toggle="tooltip" data-placement="top" maxlength="18" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar" id="barPassword"></span>
+                                        <label class="label">Пароль</label>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 group passwords">
+                                        <input id="repeatPassword" type="password" class="valid"  maxlength="18"  data-toggle="tooltip" data-placement="top" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar" id="barRepeatPassword"></span>
+                                        <label class="label" id="labelRepeatPassword">Підтвердьте пароль</label>
+                                        <img src="img/eye.png" id="eye" class="eye" onclick="showPassword()">
+                                    </div>
+                                </div>
+                                <div class="row alertInfo">
+                                    <p class="alertGroup" id="alertPassword"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 secondLevel">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <p id="accessEmail">Підтвердьте електронну адресу</p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <p id="accessEmailText">Щоб переконатись, що ця електронна адреса ваша, ми надішлемо вам лист із шестизначним кодом підтвердження.</p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <p id="jsEmail"></p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 accessCode thirdLevel">
+                                    <!--<input type="password" class="valid"  maxlength="18"  data-toggle="tooltip" data-placement="top" title="минимум 6 символов" required>-->
+                                    <!--<span class="highlight"></span>-->
+                                    <!--<span class="bar"></span>-->
+                                    <!--<label class="label">Підтвердьте пароль</label>-->
+                                    <input  data-toggle="tooltip" data-placement="top"  id="code" type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar" id="barCode"></span>
+                                    <label class="label">Введіть код підтвердження</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wrapperLogo">
+                            <img src="img/blackLogo.png" class="blackLogo">
+                        </div>
+                    </div>
+                    <div class="row lastRow firstLevel">
+                        <a id="back" href="index.html">Увійти в обліковий запис</a>
+                        <input type="button" value="Далі" data-toggle="tooltip" data-placement="top" class="btn btn-default btn-md" id="next" onclick="checkValidation()">
+                        <span id="error" style="display: none; color:red">проверьте, все ли вы ввели правильно?</span>
+                    </div>
+                    <div class="row lastRow secondLevel">
+                        <a id="secondBack" onclick="goToFirstLevel()">Назад</a>
+                        <a id="notNow" href="index.html">Не зараз</a>
+                        <input type="button" value="Надіслати" class="btn btn-default btn-md" id="send" onclick="goToThirdLevel()">
+                    </div>
+                    <div class="row lastRow thirdLevel">
+                        <a id="thirdBack" onclick="fromThirdLvlToFirstLvl()">Назад</a>
+                        <input type="button" value="Перевірити" class="btn btn-default btn-md" id="check" onclick="nextLevel()">
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-0"></div>
+        </div>
+    </div>
+</header>
+<div id="my-content">
+    <link rel="stylesheet" type="text/css" href="css/styleRegistration.css">
+    <script src="js/scripts.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</div>
+
+</body>
+</html>
