@@ -164,6 +164,13 @@ header {
     opacity: 0;
 }
 
+.alertGroupTeacher {
+    margin-top: 10px;
+    font-size: 10px;
+    width: 200px;
+    opacity: 1;
+}
+
 #alertPassword {
     margin-top: 0px;
     margin-left: 20px;
@@ -363,10 +370,6 @@ header {
         float: left;
     }
 
-    .alertGroup {
-        margin-top: 7px;
-        margin-left: 5px;
-    }
     .email {
         margin-top: 0px;
     }
@@ -516,7 +519,7 @@ header {
     }
 
 
-    .alertGroup, #alertPassword {
+    #alertPassword {
         margin-top: 8px;
         width: 150px;
         font-size: 9px;
