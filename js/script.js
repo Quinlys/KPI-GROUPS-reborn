@@ -32,15 +32,6 @@ function getValue() {
 }
 
 
-//Сдвиг блока после загрузки фото
-$('.click').on('click', function (e) {
-    e.preventDefault();
-    $('#photo').animate({
-        width: 300,
-        height: 250
-    });
-});
-
 //Функция выбора загрузки фото на страницу
 function getName(str) {
     if (str.lastIndexOf('\\')) {
