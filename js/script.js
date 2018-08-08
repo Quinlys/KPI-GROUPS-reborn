@@ -32,20 +32,6 @@ function getValue() {
 }
 
 
-//Функция выбора загрузки фото на страницу
-function getName(str) {
-    if (str.lastIndexOf('\\')) {
-        let i = str.lastIndexOf('\\') + 1;
-    }
-    else {
-        let i = str.lastIndexOf('/') + 1;
-    }
-    let filename = str.slice(i);
-    let uploaded = document.getElementById("fileformlabel");
-    uploaded.innerHTML = filename;
-}
-
-
 // Скрыть/показать пароль //
 
 function showPassword() {
