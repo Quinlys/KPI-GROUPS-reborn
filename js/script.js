@@ -2,7 +2,6 @@ $(document).ready(function () {
     let primaryBtn = $('#click1');
     let secondaryBtns = $('.secondary');
     primaryBtn.click(function () {
-        //primaryBtn.classList.add('hide');
         deleteItem(primaryBtn, 600, showSecondaryBtns);
     });
 
@@ -32,6 +31,8 @@ function getValue() {
 }
 
 
+
+
 // Скрыть/показать пароль //
 
 function showPassword() {
@@ -49,27 +50,28 @@ function showPassword() {
     }
 }
 
+// --------------------- //
 
+// Переход на следующий уровень //
 
 function nextLevel() {
 
-    let email = document.getElementById('email').value;
-    document.getElementById("jsEmail").innerText = email;
-    console.log(email);
+    let email = document.getElementById('email').value;     // - Записывается значение из инпута с електронной адресой.
+    document.getElementById("jsEmail").innerText = email;   // - Вывод указаной электронной адресы на следующем уровне.
+
     let firstLevel = document.getElementsByClassName('firstLevel');
     let secondLevel = document.getElementsByClassName('secondLevel');
-    let info =(firstLevel[0].style.display === "block");
-    if(info){
-        // console.log(firstLevel);
-        let colOp=1;
-        function fadeOutFunk() {
-            console.log("f "+ colOp.toString());
-            colOp-=0.05;
+    let info = (firstLevel[0].style.display === "block");
+    if (info) {
+        let colOp = 1;
+        function fadeOutFunk() {                            // Функция на исчезновение объекта.
+            colOp -= 0.05;
             firstLevel[0].style.opacity=colOp.toString();
             firstLevel[1].style.opacity=colOp.toString();
         }
-        // функция на появление
+
         let timer = setInterval(fadeOutFunk, 25);
+
         function func() {
             clearInterval(timer);
             firstLevel[0].style.display = "none";
@@ -231,14 +233,6 @@ function fromThirdLvlToFirstLvl() {
 function checkValidation(){
 
     for(i=0; i<document.getElementsByClassName('valid').length; i++) {
-            // if(i==document.getElementsByClassName('valid').length){
-            //     for(i=0; i<remove; i++){
-            //
-            //         document.getElementsByClassName('valid')[i].classList.remove('valid');
-            //         document.getElementsByClassName('bar')[i].classList.remove('bar');
-            //     }
-            // }
-
 
         console.log(document.getElementsByClassName('valid')[i]);
 
@@ -247,24 +241,18 @@ function checkValidation(){
             case 0:
                 console.log(document.getElementsByClassName('valid')[i]);
 
-                // let reg = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
-                //^[A-Z][A-Za-z]+ [A-Z][a-z]+$
-                let regName =/^[A-ZА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+$/g;
                 let regNameTeacher =/^[A-ZА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+$/g;
 
                 console.log( (document.getElementsByClassName('valid')[i].value).match(/^[A-ZА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+$/g) );
 
                 if (document.getElementsByClassName('validT')[0]){
 
-                    //if(document.getElementsByClassName('validT')[0].value.length>=5)){
                     if(regNameTeacher.test(document.getElementsByClassName('validT')[0].value)){
                         document.getElementsByClassName('valid')[i].classList.add('good');
                     }else{
                         if(document.getElementsByClassName('good')[i])
                             document.getElementsByClassName('good')[i].classList.remove('good');
                         document.getElementsByClassName('valid')[i].classList.add('wrong');
-                        // document.getElementsByClassName('valid')[i].classList.remove('valid');
-                        // document.getElementsByClassName('bar')[i].classList.remove('bar');
                         document.getElementsByClassName('group')[i].classList.add('wrong-group');
                         document.getElementsByClassName('label')[i].classList.add('wrong-label');
                         document.getElementsByClassName('bar')[i].classList.add('wbar');
@@ -279,8 +267,6 @@ function checkValidation(){
                         if(document.getElementsByClassName('good')[i])
                             document.getElementsByClassName('good')[i].classList.remove('good');
                         document.getElementsByClassName('valid')[i].classList.add('wrong');
-                        // document.getElementsByClassName('valid')[i].classList.remove('valid');
-                        // document.getElementsByClassName('bar')[i].classList.remove('bar');
                         document.getElementsByClassName('group')[i].classList.add('wrong-group');
                         document.getElementsByClassName('label')[i].classList.add('wrong-label');
                         document.getElementsByClassName('bar')[i].classList.add('wbar');
@@ -294,8 +280,6 @@ function checkValidation(){
                 console.log(document.getElementsByClassName('valid')[i].value.length);
 
                 let regGroup =/^([a-zA-Zа-яА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ]-[0-9][0-9])$/;
-                //let regGroupT =/^[A-ZА-Я][a-zA-Zа-яА-Я]+ [A-ZА-Я][a-zа-я]+ [A-ZА-Я][a-zа-я]+$/g;//поменять имя переменной
-                // let regGroupT =/^[а-яА-Я]+$/g;
                 console.log( (document.getElementsByClassName('valid')[i]) );
                 console.log( (document.getElementsByClassName('valid')[i].value).match(/^([a-zA-Zа-яА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ]-[0-9][0-9])$/g) );
 
@@ -307,8 +291,6 @@ function checkValidation(){
                             if(document.getElementsByClassName('good')[i])
                                 document.getElementsByClassName('good')[i].classList.remove('good');
                         document.getElementsByClassName('valid')[i].classList.add('wrong');
-                        // document.getElementsByClassName('valid')[i].classList.remove('valid');
-                        // document.getElementsByClassName('bar')[i].classList.remove('bar');
                         document.getElementsByClassName('group')[i].classList.add('wrong-group');
                         document.getElementsByClassName('label')[i].classList.add('wrong-label');
                         document.getElementsByClassName('bar')[i].classList.add('wbar');
@@ -322,8 +304,6 @@ function checkValidation(){
                         if(document.getElementsByClassName('good')[i])
                             document.getElementsByClassName('good')[i].classList.remove('good');
                         document.getElementsByClassName('valid')[i].classList.add('wrong');
-                        // document.getElementsByClassName('valid')[i].classList.remove('valid');
-                        // document.getElementsByClassName('bar')[i].classList.remove('bar');
                         document.getElementsByClassName('group')[i].classList.add('wrong-group');
                         document.getElementsByClassName('label')[i].classList.add('wrong-label');
                         document.getElementsByClassName('bar')[i].classList.add('wbar');
@@ -345,12 +325,9 @@ function checkValidation(){
                     if(document.getElementsByClassName('good')[i])
                         document.getElementsByClassName('good')[i].classList.remove('good');
                     document.getElementsByClassName('valid')[i].classList.add('wrong');
-                    // document.getElementsByClassName('valid')[i].classList.remove('valid');
-                    // document.getElementsByClassName('bar')[i].classList.remove('bar');
                     document.getElementsByClassName('group')[i].classList.add('wrong-group');
                     document.getElementsByClassName('label')[i].classList.add('wrong-label');
                     document.getElementsByClassName('bar')[i].classList.add('wbar');
-                    // document.getElementsByClassName('valid')[i].setAttribute(aria_describedby, "tooltip200157");
 
                     // alert('Введите корректный e-mail');
 
@@ -368,8 +345,6 @@ function checkValidation(){
                     if(document.getElementsByClassName('good')[i])
                     document.getElementsByClassName('good')[i].classList.remove('good');
                     document.getElementsByClassName('valid')[i].classList.add('wrong');
-                    // document.getElementsByClassName('valid')[i].classList.remove('valid');
-                    // document.getElementsByClassName('bar')[i].classList.remove('bar');
                     document.getElementsByClassName('label')[i].classList.add('wrong-label');
                     document.getElementById('alertPassword').style.color = "red";
                     document.getElementsByClassName('bar')[i].classList.add('wbar');
@@ -391,8 +366,6 @@ function checkValidation(){
                     if(document.getElementsByClassName('good')[i])
                     document.getElementsByClassName('good')[i].classList.remove('good');
                     document.getElementsByClassName('valid')[i].classList.add('wrong');
-                    // document.getElementsByClassName('valid')[i].classList.remove('valid');
-                    // document.getElementsByClassName('bar')[i].classList.remove('bar');
                     document.getElementsByClassName('group')[i].classList.add('wrong-group');
                     document.getElementsByClassName('label')[i].classList.add('wrong-label');
                     document.getElementsByClassName('bar')[i].classList.add('wbar');
