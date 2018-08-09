@@ -103,7 +103,6 @@ function goToThirdLevel() {
     let thirdLevel = document.getElementsByClassName('thirdLevel');
     let secondLevel = document.getElementsByClassName('secondLevel');
 
-
     let colOp=1;
     function fadeOutFunk() {
         console.log("n "+ colOp.toString());
@@ -111,10 +110,7 @@ function goToThirdLevel() {
         secondLevel[1].style.opacity=colOp.toString();
     }
 
-
-
     let timer = setInterval(fadeOutFunk, 50);
-
 
     function func() {
         clearInterval(timer);
@@ -122,26 +118,18 @@ function goToThirdLevel() {
         thirdLevel[0].style.display = "block";
         thirdLevel[1].style.display = "block";
     }
+
     setTimeout(func, 500);
 
     function ifCheck() {
-    // var opacity = secondLevel[1].style.opacity;
-    // var intOpacity=parseInt(opacity);
-    // console.log("opacity " + intOpacity.toFixed());
-    //
-    // if(intOpacity.toFixed()==0){
         let colOpUp=0;
         function fadeUpFunk() {
             console.log('if '+colOp);
-            // console.log("n2 "+ colOpUp.toString());
             colOpUp+=0.1;
             thirdLevel[0].style.opacity=colOpUp.toString();
             thirdLevel[1].style.opacity=colOpUp.toString();
         }
         let upTimer = setInterval(fadeUpFunk, 50);
-    // }else{
-    //     console.log('else '+colOp);
-    // }
         function func1() {
             clearInterval(upTimer);
         }
@@ -150,19 +138,21 @@ function goToThirdLevel() {
     setTimeout(ifCheck, 500);
 }
 
+//  Go to First Level from second level.
+
 function goToFirstLevel() {
     let firstLevel = document.getElementsByClassName('firstLevel');
     let secondLevel = document.getElementsByClassName('secondLevel');
 
 
     let colOp=1;
+
     function fadeOutFunk() {
-        // console.log("f "+ colOp.toString());
         colOp-=0.05;
         secondLevel[0].style.opacity=colOp.toString();
         secondLevel[1].style.opacity=colOp.toString();
     }
-        // функция на появление
+
     let timer = setInterval(fadeOutFunk, 25);
     function func() {
         clearInterval(timer);
@@ -172,6 +162,7 @@ function goToFirstLevel() {
         firstLevel[0].style.display = "block";
         firstLevel[1].style.display = "block";
     }
+
     setTimeout(func, 500);
 
     let colOpUp=0;
@@ -203,7 +194,7 @@ function fromThirdLvlToFirstLvl() {
         thirdLevel[0].style.opacity=colOp.toString();
         thirdLevel[1].style.opacity=colOp.toString();
     }
-    // функция на появление
+
     let timer = setInterval(fadeOutFunk, 25);
     function func() {
         clearInterval(timer);
@@ -230,6 +221,10 @@ function fromThirdLvlToFirstLvl() {
     setTimeout(func1, 1000);
 }
 
+
+
+// Проверка инпутов.
+
 function checkValidation(){
 
     for(i=0; i<document.getElementsByClassName('valid').length; i++) {
@@ -241,7 +236,7 @@ function checkValidation(){
             case 0:
                 console.log(document.getElementsByClassName('valid')[i]);
 
-                let regNameTeacher =/^[A-ZА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+$/g;
+                let regNameTeacher =/^[A-ZА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ] + [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ] + [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ] +$ /g; // Проверка имени преподавателя ( Обязательное отчество )
 
                 console.log( (document.getElementsByClassName('valid')[i].value).match(/^[A-ZА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+$/g) );
 
@@ -406,7 +401,6 @@ function checkValidation(){
             console.log("check else");
         }
     }
-
 }
 
 $(document).ready (function(){
