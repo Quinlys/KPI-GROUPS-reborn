@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="751575ab-8186-424c-bece-f11096b342fa" name="Default" comment="">
+    <list default="true" id="751575ab-8186-424c-bece-f11096b342fa" name="Default" comment="Deleted some commits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/GroupRegistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/StudentRegistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeacherRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherRegistration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -43,47 +40,26 @@
       <file leaf-file-name="TeacherRegistration.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TeacherRegistration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
+            <state relative-caret-position="45">
               <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentRegistration.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentRegistration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-971">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupRegistration.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GroupRegistration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="119" column="107" selection-start-line="119" selection-start-column="107" selection-end-line="119" selection-end-column="107" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styleRegistration.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/styleRegistration.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="170" column="14" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/KPI-GROUPS-reborn-master-1/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="348" column="16" selection-start-line="348" selection-start-column="16" selection-end-line="348" selection-end-column="149" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="185">
+              <caret line="237" column="149" selection-start-line="237" selection-start-column="149" selection-end-line="237" selection-end-column="149" />
             </state>
           </provider>
         </entry>
@@ -92,13 +68,14 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>valid</find>
       <find>alertInfo</find>
       <find>p</find>
       <find>Animation</find>
       <find>alertGro</find>
       <find>alertGroup</find>
       <find>firstLevel</find>
+      <find>valid</find>
+      <find>Teacher</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,10 +90,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/styleRegistration.css" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/StudentRegistration.html" />
         <option value="$PROJECT_DIR$/TeacherRegistration.html" />
         <option value="$PROJECT_DIR$/GroupRegistration.html" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -140,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,7 +129,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,7 +162,8 @@
       <workItem from="1533375251717" duration="5231000" />
       <workItem from="1533661752308" duration="1662000" />
       <workItem from="1533771019575" duration="1146000" />
-      <workItem from="1533841768285" duration="894000" />
+      <workItem from="1533841768285" duration="2150000" />
+      <workItem from="1533940231027" duration="583000" />
     </task>
     <task id="LOCAL-00001" summary="Added alert, fixed input for Name">
       <created>1533663072261</created>
@@ -215,14 +193,28 @@
       <option name="project" value="LOCAL" />
       <updated>1533771144047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Deleted old commits &amp; added new.">
+      <created>1533844199453</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1533844199453</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Deleted some commits">
+      <created>1533844910004</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533844910004</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37101000" />
+    <option name="totallyTimeSpent" value="38940000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="811" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20972222" />
@@ -255,9 +247,49 @@
     <MESSAGE value="Deleted localization" />
     <MESSAGE value="Deleted moving block." />
     <MESSAGE value="Deleted code for upload image." />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted code for upload image." />
+    <MESSAGE value="Deleted old commits &amp; added new." />
+    <MESSAGE value="Deleted some commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted some commits" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TeacherRegistration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentRegistration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="124" selection-start-line="68" selection-start-column="119" selection-end-line="68" selection-end-column="124" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupRegistration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="107" selection-start-line="119" selection-start-column="107" selection-end-line="119" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styleRegistration.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="170" column="14" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6060">
+          <caret line="404" lean-forward="true" selection-start-line="404" selection-end-line="404" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TeacherRegistration.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -328,10 +360,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/StudentRegistration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="124" selection-start-line="68" selection-start-column="119" selection-end-line="68" selection-end-column="124" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -342,27 +377,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeacherRegistration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentRegistration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-971">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GroupRegistration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="15">
           <caret line="119" column="107" selection-start-line="119" selection-start-column="107" selection-end-line="119" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeacherRegistration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/KPI-GROUPS-reborn-master-1/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="348" column="16" selection-start-line="348" selection-start-column="16" selection-end-line="348" selection-end-column="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="237" column="149" selection-start-line="237" selection-start-column="149" selection-end-line="237" selection-end-column="149" />
         </state>
       </provider>
     </entry>

@@ -235,8 +235,7 @@ function checkValidation(){
 
             case 0:
                 console.log(document.getElementsByClassName('valid')[i]);
-
-                let regNameTeacher =/^[A-ZА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ] + [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ] + [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ] +$ /g; // Проверка имени преподавателя ( Обязательное отчество )
+                let regNameTeacher =/^[A-ZА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+$/g;
 
                 console.log( (document.getElementsByClassName('valid')[i].value).match(/^[A-ZА-ЯІіЇїЄєҐґ][a-zA-Zа-яА-ЯІіЇїЄєҐґ]+ [A-ZА-ЯІіЇїЄєҐґ][a-zа-яІіЇїЄєҐґ]+$/g) );
 
